@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D7ME - سيرفر دحمي الرسمي</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Animation Libraries CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <i class="fas fa-code"></i>
+            <div class="loading-text">D7ME</div>
+        </div>
+    </div>
+
+    <!-- Burger Menu -->
+    <div class="burger-menu" id="burger-menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="nav-menu">
+        <div class="nav-header">
+            <h2><i class="fas fa-terminal"></i> D7ME</h2>
+            <button class="close-menu" id="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" data-page="home"><i class="fas fa-home"></i> <span data-ar="الرئيسية" data-en="Home">الرئيسية</span></a></li>
+            <li><a href="#hacks" data-page="hacks"><i class="fas fa-bug"></i> <span data-ar="الهاكات" data-en="Hacks">الهاكات</span></a></li>
+            <li><a href="#contact" data-page="contact"><i class="fas fa-comments"></i> <span data-ar="التواصل" data-en="Contact">التواصل</span></a></li>
+        </ul>
+        <div class="nav-settings">
+            <div class="setting-group">
+                <label><i class="fas fa-palette"></i> <span data-ar="المظهر" data-en="Theme">المظهر</span></label>
+                <select id="theme-selector">
+                    <option value="dark" data-ar="داكن" data-en="Dark">داكن</option>
+                    <option value="light" data-ar="فاتح" data-en="Light">فاتح</option>
+                </select>
+            </div>
+            <div class="setting-group">
+                <label><i class="fas fa-language"></i> <span data-ar="اللغة" data-en="Language">اللغة</span></label>
+                <select id="language-selector">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        <span data-ar="أهلاً بكم في سيرفر دحمي الرسمي" data-en="Welcome to D7ME Official Server">أهلاً بكم في سيرفر دحمي الرسمي</span>
+                    </h1>
+                    
+                    <div class="warning-box" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        <p data-ar="إذا في مشكلة في الموقع اضغط على نافذة التواصل وادخل سيرفر الديسكورد حقنا وافتح تكت" 
+                           data-en="If there's an issue with the website, click on the contact window and enter our Discord server and open a ticket">
+                           إذا في مشكلة في الموقع اضغط على نافذة التواصل وادخل سيرفر الديسكورد حقنا وافتح تكت
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Animated Background Elements -->
+                <div class="bg-animation">
+                    <div class="floating-icon" style="--delay: 0s;"><i class="fab fa-android"></i></div>
+                    <div class="floating-icon" style="--delay: 2s;"><i class="fas fa-code"></i></div>
+                    <div class="floating-icon" style="--delay: 4s;"><i class="fas fa-shield-alt"></i></div>
+                    <div class="floating-icon" style="--delay: 6s;"><i class="fas fa-download"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hacks Page -->
+        <section id="hacks" class="page">
+            <div class="page-header" data-aos="fade-down">
+                <h2><i class="fas fa-bug"></i> <span data-ar="الهاكات" data-en="Hacks">الهاكات</span></h2>
+            </div>
+            
+            <div class="hacks-grid">
+                <div class="hack-card android-hacks" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-header">
+                        <i class="fab fa-android card-icon"></i>
+                        <h3 data-ar="هاكات الأندرويد" data-en="Android Hacks">هاكات الأندرويد</h3>
+                    </div>
+                    <p class="card-description" data-ar="أحدث هاكات الأندرويد" data-en="Latest Android Hacks">أحدث هاكات الأندرويد</p>
+                </div>
+            </div>
+
+            <!-- Delta Hack Modal -->
+            <div id="delta-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <i class="fas fa-star modal-icon"></i>
+                            <span class="latest-badge" data-ar="أحدث إصدار" data-en="Latest Version">أحدث إصدار</span>
+                        </div>
+                        <button class="close-modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 data-ar="هاك دلتا" data-en="Delta Hack">هاك دلتا</h3>
+                        <p data-ar="أحدث إصدار من هاك دلتا مع ميزات محسنة وأداء أفضل" 
+                           data-en="Latest version of Delta Hack with enhanced features and better performance">
+                           أحدث إصدار من هاك دلتا مع ميزات محسنة وأداء أفضل
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="download-btn">
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="page-header" data-aos="fade-down">
+                <h2><i class="fas fa-comments"></i> <span data-ar="التواصل" data-en="Contact">التواصل</span></h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-headset contact-icon"></i>
+                    <h3 data-ar="دعم فني على مدار الساعة" data-en="24/7 Technical Support">دعم فني على مدار الساعة</h3>
+                    <p data-ar="فريق الدعم متاح لمساعدتك في أي وقت" data-en="Support team available to help you anytime">فريق الدعم متاح لمساعدتك في أي وقت</p>
+                </div>
+                
+                <div class="contact-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-shield-alt contact-icon"></i>
+                    <h3 data-ar="أمان متقدم" data-en="Advanced Security">أمان متقدم</h3>
+                    <p data-ar="حماية عالية المستوى لجميع خدماتنا" data-en="High-level protection for all our services">حماية عالية المستوى لجميع خدماتنا</p>
+                </div>
+                
+                <div class="contact-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-sync-alt contact-icon"></i>
+                    <h3 data-ar="تحديثات مستمرة" data-en="Continuous Updates">تحديثات مستمرة</h3>
+                    <p data-ar="يتم تحديث الهاكات على مدار الساعة" data-en="Hacks are updated around the clock">يتم تحديث الهاكات على مدار الساعة</p>
+                </div>
+            </div>
+            
+            <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://discord.gg/azc" target="_blank" class="social-link discord">
+                    <i class="fab fa-discord"></i>
+                    <span data-ar="ديسكورد" data-en="Discord">ديسكورد</span>
+                </a>
+                <a href="https://youtube.com/@d7me_azc?si=1kcJyAQ4D4U7wfWw" target="_blank" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span data-ar="يوتيوب" data-en="YouTube">يوتيوب</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-ar="جميع الحقوق محفوظة ل" data-en="All rights reserved to">جميع الحقوق محفوظة ل</p>
+            <span class="brand-name">دحمي</span>
+        </div>
+    </footer>
+
+    <!-- Animation Libraries JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/simple.js"></script>
+</body>
+</html>
+
